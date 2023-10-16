@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+}
+:root{
+    --color-menu: rgba(255, 0, 0, 0.733);
+    --color-font: #ffffff;
+    --color-hover: rgb(177, 31, 31);
+    --color-hoverTop: rgb(233, 226, 226);
+    --color-body: rgb(255, 255, 255);
+    --color-painel: rgb(87, 87, 87);
+    --color-button: rgb(25, 25, 235, 0.705);                                                                                
+}
+/*HEADER*/
+header{
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: var(--color-menu);
+    box-shadow: 0px 5px 5px rgb(117, 117, 117);
+}
+nav{
+    margin-left: 20px;
+    display: flex;
+    gap: 83%;
+}
+/*LINKS DE NAVEGACAO*/
+.link-Nav{
+    display: flex;
+}
+.link-pag{
+    color: var(--color-font);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 4%;
+}
+.link-pag:hover{
+    color: black;
+    background-color: var(--color-hoverTop);
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: 0.9s;
+    padding: 4%;
+}
+/*LINKS SOCIAL*/
+.social-Menu{
+    display: flex;
+}
+.social-link{
+    border-radius: 4px;
+    gap: 10px;
+}
+.social-link:hover{
+    height: 90%;
+    border-radius: 4px;
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: var(--color-hoverTop);
+}
+/*Modificando o corpo*/
+body{
+    background-color: var(--color-body);
+    color: var(--color-font);;
+}
+.container-Registro{
+    width: 30%;
+    background-color: var(--color-painel);
+    height: 400px;
+    margin: 4% 0% 10% 35%;
+    line-height: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(150, 149, 149);
+}
+.container-Registro h2{
+    text-align: center;
+    line-height: 50px;
+}
+.container-Btns{
+    line-height: 20px;
+    margin-left: 5%;
+}
+.container-Btns form{
+    display: flex;
+    gap: 10%;
+}
+/*Modificando CONTAINER REGISTRO*/
+.container-Texts{
+    margin-left: 5%;
+}
+#descricaoProduto{
+    width: 90%;
+    height: 95px;
+    resize: none;
+    margin-left: 1%;
+}
+.form-descricao{
+    margin-left: 5%;
+}
+/*MODIFICANDO O FOOTER*/
+footer{
+    padding: 1%;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-menu);
+    color: var(--color-font);
+}
+/* Estilo para disponibilidade disponível */
+.disponivel {
+    color: rgb(3, 197, 3);
+}
+/* Estilo para disponibilidade indisponível */
+.indisponivel {
+    color: rgb(230, 32, 32);
+}
+/* Modificando os inputs textos e os buttons do cadastro*/
+.text-registro{
+    background-color: var(--color-body);
+    background-color: rgba(238, 238, 238, 0.918);
+    outline: 0;
+}
+.btn-registrar{
+    color: var(--color-font);
+    background-color: var(--color-button);
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
+}
+.btn-registrar:hover{
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+    transition: 0.4s;
+}

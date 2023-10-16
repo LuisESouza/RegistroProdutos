@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/registro.css">
+    <title>Registro Produtos</title>
+</head>
+<body>
+    <header>
+        <nav>  
+            <li class="link-Nav">
+                <a class="link-pag" href="index.html">Inicio</a>
+                <a class="link-pag" href="registro.html">Registro</a>
+                <a class="link-pag" href="lista.html">Produtos</a>
+            </li>
+
+            <li class="social-Menu">
+                <a class="social-link" href="https://github.com/LuisESouza" target="_blank">
+                    <img src="Componentes/github.png" alt="IconGitHub">
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/lu%C3%ADs-souza-589452268/" target="_blank">
+                    <img src="Componentes/linkedin.png" alt="IconLinkedIn">
+                </a>
+                <a class="social-link" href="https://www.instagram.com/luis_e_souza/" target="_blank">
+                    <img src="Componentes/instagram.png" alt="IconInstagram">
+                </a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-Registro">
+            <h2>Registro de produtos</h2>
+                <div class="container-Texts">
+                    <form>
+                        <table>Nome: </table>
+                        <input type="text" id="nomeProduto" class="text-registro" required>
+                    </form>
+                    <form>
+                        <table>Valor: </table>
+                        <input type="number" id="valorProduto" class="text-registro" required step="0.01">
+                    </form>
+                    <form>
+                        <table>Quantidade: </table>
+                        <input type="number" id="qtdProduto" class="text-registro" required>
+                    </form>
+
+                </div> 
+                    <form class="form-descricao">
+                        <table class="table-descricao">Descrição: </table>
+                        <textarea id="descricaoProduto" class="text-registro" required rows="4" cols="50" placeholder="Informe a descrição do produto"></textarea>
+                    </form>          
+                <div class="container-Btns">
+                        <table>Informe se disponibilidade do produto:</table>
+                    <form>        
+                            <label class="label-Registrar">
+                                <input type="radio" name="disponibilidade" class="Disponibilidade" value="disponivel"required>Disponível
+                            </label>
+                            
+                            <label class="label-Registrar">
+                                <input type="radio" name="disponibilidade" class="Disponibilidade" value="indisponivel" required>Indisponível
+                            </label>
+                    </form>
+
+                    <form class="form-Registrar">
+                        <input type="button" value="Cadastrar" class="btn-registrar" onclick="Cadastrar()">
+                    </form>
+                </div>           
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito por LuisESouza</p>
+    </footer>
+
+    <script src="Script/registro.js"></script>
+    <script src="Script/lista.js"></script>
+</body>
+</html>

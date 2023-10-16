@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/registro.css">
+    <link rel="stylesheet" href="Style/lista.css">
+    <title>Lista Produtos</title>
+</head>
+<body onload="carregarProdutos()">
+    <header>
+        <nav>  
+            <li class="link-Nav">
+                <a class="link-pag" href="index.html">Inicio</a>
+                <a class="link-pag" href="registro.html">Registro</a>
+                <a class="link-pag" href="lista.html">Produtos</a>
+            </li>
+
+            <li class="social-Menu">
+                <a class="social-link" href="https://github.com/LuisESouza" target="_blank">
+                    <img src="Componentes/github.png" alt="IconGitHub">
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/lu%C3%ADs-souza-589452268/" target="_blank">
+                    <img src="Componentes/linkedin.png" alt="IconLinkedIn">
+                </a>
+                <a class="social-link" href="https://www.instagram.com/luis_e_souza/" target="_blank">
+                    <img src="Componentes/instagram.png" alt="IconInstagram">
+                </a>
+            </li>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="painel-produtos"> 
+            <div class="titulo-produtos"><h2>Lista de Produtos</h2></div>
+            <div class="painel-Infoprod" id="painel-Infoprod">     
+                    <input type="button" value="Voltar" class="btn-voltar" onclick="voltar()">              
+            </div>
+            <div class="listaProdutos" id="listaProdutos">            
+
+            </div>                    
+        </section> 
+        <div class="div-ordenar"><input type="button" value="Ordenar Lista" class="btn-ordenar" onclick="ordenar()"></div>
+    </main>
+
+
+    <footer>
+            <p>Feito por LuisESouza</p>
+    </footer>
+    <script src="Script/index.js"></script>
+    <script src="Script/lista.js"></script>
+</body>
+</html>
