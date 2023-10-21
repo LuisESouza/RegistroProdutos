@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 /*Modificando o link "Comecar agora"*/
 .link-comecar{
     text-decoration: none;
@@ -5,7 +12,7 @@
     background-color: var(--color-button);
     color: aliceblue;
     padding: 1%;
-    margin-top: 5%;
+    margin-top: 1%;
     align-self: center;
     border-radius: 5px;
 }
@@ -43,7 +50,7 @@
     text-align: center;
     width: 60%;
     margin: 0 auto;
-    gap: 30px;
+    gap: 10px;
     padding: 20px;
     font-weight: 500;
     font-size: 22px;
@@ -56,3 +63,25 @@
 }
 
 
+footer {
+    padding: 0.5%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-menu);
+    color: var(--color-font);
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.contato-social {
+    width: 350px;
+    margin-left: 20px;
+    text-align: left;
+    line-height: 20px;
+}
