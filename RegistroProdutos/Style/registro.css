@@ -5,62 +5,6 @@
 main{
     display: flex;
 }
-:root{
-    --color-menu: rgba(255, 0, 0, 0.733);
-    --color-font: #ffffff;
-    --color-hover: rgb(177, 31, 31);
-    --color-hoverTop: rgb(233, 226, 226);
-    --color-body: rgb(255, 255, 255);
-    --color-painel: rgb(87, 87, 87);
-    --color-button: rgb(25, 25, 235, 0.705);                                                                                
-}
-/*HEADER*/
-header{
-    width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: var(--color-menu);
-    box-shadow: 0px 5px 5px rgb(117, 117, 117);
-}
-nav{
-    margin-left: 20px;
-    display: flex;
-    gap: 83%;
-}
-/*LINKS DE NAVEGACAO*/
-.link-Nav{
-    display: flex;
-}
-.link-pag{
-    color: var(--color-font);
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 4%;
-}
-.link-pag:hover{
-    color: black;
-    background-color: var(--color-hoverTop);
-    text-decoration: none;
-    transform: scale(1.05);
-    transition: 0.9s;
-    padding: 4%;
-}
-/*LINKS SOCIAL*/
-.social-Menu{
-    display: flex;
-}
-.social-link{
-    border-radius: 4px;
-    gap: 10px;
-}
-.social-link:hover{
-    height: 90%;
-    border-radius: 4px;
-    transition: 0.5s;
-    transform: scale(1.1);
-    background-color: var(--color-hoverTop);
-}
 /*Modificando o corpo*/
 body{
     background-color: var(--color-body);
@@ -100,16 +44,6 @@ body{
 .form-descricao{
     margin-left: 5%;
 }
-/*MODIFICANDO O FOOTER*/
-footer{
-    padding: 1%;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    background-color: var(--color-menu);
-    color: var(--color-font);
-}
 /* Estilo para disponibilidade disponível */
 .disponivel {
     color: rgb(3, 197, 3);
@@ -135,4 +69,26 @@ footer{
     background-color: var(--color-hover);
     transform: scale(1.05);
     transition: 0.4s;
+}
+/*MODIFICANDO O FOOTER*/
+footer{
+    padding: 0.5%;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-menu);
+    color: var(--color-font);
+}
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contato-social{
+    width: 350px;
+    margin-left: 20px;
+    text-align: left;
+    line-height: 20px;
 }
