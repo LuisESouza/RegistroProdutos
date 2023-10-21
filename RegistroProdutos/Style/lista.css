@@ -1,15 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 main{
     display: flex;
     flex-direction: column;
+    color: aliceblue;
 }
 /*LISTA DE PRODUTOS*/
-.painel-produtos{
+.painel-produtos {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 600px;
-    margin-left: 25%;
-    margin-top: 4%;
+    width: 670px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    top: 0;
+    bottom: 0;
     background-color: var(--color-painel);
     border-radius: 20px;
     padding-left: 1%;
@@ -43,7 +51,7 @@ main{
 }
 #areatxtDescicao{
     width: 100%;
-    height: 148px;
+    height: 110px;
     outline: 0;
     resize: none
 }
@@ -86,34 +94,18 @@ main{
 /*DELETE*/
 .btn-delete{
     padding: 0.5%;
-    width: 10%;
+    width: 15%;
     color: aliceblue;
     background-color: var(--color-button);
     border: none;
     border-radius: 4px;
-    margin-right: 20%;
+    margin-right: 5%;
 }
 .btn-delete:hover{
     transform: scale(1.05);
     transition: 0.3s;
     background-color: var(--color-hover);
     cursor: pointer;
-}
-/*ORDENAR*/
-.div-ordenar{
-    margin-left: 26%;
-}
-.btn-ordenar {
-  position: absolute;
-  background-color: var(--color-button);
-  padding: 0.7%;
-  border:none;
-  color: var(--color-font);
-}
-.btn-ordenar:hover{
-    transform: scale(1.05);
-    transition: 0.3s;
-    background-color: var(--color-hover);
 }
 /*INPUT TEXT*/
 #input-valor, #input-nome{
@@ -156,6 +148,7 @@ main{
 .btn-salvar{
     width: 10%;
     padding: 0.5%;
+    margin-left: 2%;
     color: aliceblue;
     background-color: var(--color-button);
     border: none;
@@ -168,12 +161,32 @@ main{
     background-color: rgb(0, 161, 0);
     cursor: pointer;
 }
-.div-EditRemove{
-   display: flex;
-   flex-direction: row;
-   gap: auto;
-}
 /*DISPONIBILIDADE*/
 .contianer-QuantDispo{
     display: flex;
+}
+/*FOOTER FIXED*/
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0.5%;
+    width: 99%;
+    text-align: center;
+    background-color: var(--color-menu);
+    color: var(--color-font);
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.contato-social {
+    width: 350px;
+    margin-left: 20px;
+    text-align: left;
+    line-height: 20px;
 }
